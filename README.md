@@ -1,46 +1,53 @@
-# Getting Started with Create React App
+# Frontend Developer - Code Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Objective
+Develop a React application to connect to Binance (or other market API), fetch all assets, and display them in a live-updating table with specific headers.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### API Integration
+- Connect to the Binance API (or any other market API) to fetch asset data.
 
-### `npm start`
+### Live Data Updates
+- Implement live updates for asset data.
+- Highlight price changes with colors:
+  - Red for a decrease in value (flashing for one second).
+  - Green for an increase in value (flashing for one second).
+  - Gray for no change in value.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Table Display
+- Create a table to display the asset data.
+- Table headers include:
+  - Name
+  - Price (live data, highlight on change)
+  - Market Value (Market cap) (live data)
+  - 24h Change (live data) (if positive, green; if negative, red; default color otherwise)
+  - 24h Sparkline Chart (if positive, green; if negative, red; default color otherwise)
+- Display 10 tokens initially.
+- Include infinite scrolling (render new tokens as you scroll).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Project Setup
+- Follow recommended React setup flow.
+- Ensure the project is set up with TypeScript.
 
-### `npm test`
+### Styling
+- Use Tailwind CSS for styling.
+- Avoid including any unnecessary libraries.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Code Quality
+- Adhere to SOLID principles.
+- Maintain consistent and meaningful naming conventions.
+- Include comprehensive code documentation.
 
-### `npm run build`
+### Testing
+- Implement unit tests for critical components and functions.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Deployment
+- Publish your app on Netlify or similar.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation and Setup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
