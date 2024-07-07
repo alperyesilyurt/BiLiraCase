@@ -1,6 +1,7 @@
 import AssetTable from './components/AssetTable';
 import ErrorBoundary from './components/ErrorBoundary';
 import biliraLogo from './assets/bilira.png'; 
+import './App.css'; 
 
 function App() {
   return (

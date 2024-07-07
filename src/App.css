@@ -2,37 +2,52 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.table-header {
+  position: sticky;
+  top: 0;
+  background-color: white; /* Header'ın arka plan rengi */
+
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.highlight-green {
+  animation: flash-green 1s forwards;
+}
+
+.highlight-red {
+  animation: flash-red 1s forwards;
+}
+
+.highlight-gray {
+  animation: flash-gray 1s forwards;
+}
+
+@keyframes flash-green {
+  0% {
+    background-color: #d4f4dd;
+  }
+  100% {
+    background-color: transparent;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes flash-red {
+  0% {
+    background-color: #f8d7da;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    background-color: transparent;
   }
 }
+
+@keyframes flash-gray {
+  0% {
+    background-color: #e2e3e5;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
