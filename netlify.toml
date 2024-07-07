@@ -1,0 +1,8 @@
+[build]
+  publish = "build" # Yayınlanacak klasör
+  command = "npm run build" # Yapı komutu
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

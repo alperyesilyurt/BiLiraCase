@@ -122,6 +122,8 @@ Unit tests are implemented for critical components and functions using Jest and 
 
 The application can be deployed on Netlify or similar platforms. Ensure you set up the correct build command (`npm run build`) and publish directory (`build/`).
 
+Deployed URL: https://bilira.netlify.app/
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
