@@ -32,7 +32,7 @@ const AssetTable = () => {
   };
 
   const loadAssets = useCallback(async (page: number) => {
-    console.log("sad", page);
+ 
     setIsLoading(true);
     try {
       const newAssets = await fetchAssets(page, false);
@@ -148,7 +148,7 @@ const AssetTable = () => {
     }
   }, [assets, page]);
 
-  console.log(page);
+  //console.log(page);
 
   const observer = useRef<IntersectionObserver | null>(null);
   const lastAssetElementRef = useCallback(
@@ -169,7 +169,7 @@ const AssetTable = () => {
     return <ErrorComp />;
   }
 
-  console.log(assets);
+  //console.log(assets);
 
   return (
     <div className="overflow-x-auto">
